@@ -1,0 +1,29 @@
+.nav {
+  &--hidden {
+    display: none;
+  }
+}
+
+@include tablet {
+  .nav {
+    &--hidden {
+      display: unset;
+    }
+
+    &__items {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    &__link {
+      outline: none;
+      text-decoration: none;
+      font-size: $fontSz-xs;
+      color: $colorBlack;
+      text-transform: uppercase;
+    }
+  }
+}

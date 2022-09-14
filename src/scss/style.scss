@@ -1,0 +1,30 @@
+@import '~normalize.css/normalize.css';
+@import './reset-btn.scss';
+@import './variables';
+@import './media_breakpoints.scss';
+@import './blocks/header.scss';
+@import './blocks/nav.scss';
+@import './blocks/promo.scss';
+@import './blocks/btn-logo.scss';
+@import './blocks/btn-club.scss';
+@import './blocks/btn-red.scss';
+@import './blocks/btn-menu.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.page {
+  background-color: $colorWhite;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+
+  // &__content {
+  //   width: 100%;
+  // }
+}

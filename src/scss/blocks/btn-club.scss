@@ -1,0 +1,14 @@
+.btn-club {
+  &--hidden {
+    display: none;
+  }
+}
+
+@include tablet {
+  .btn-club {
+    @include reset-btn;
+    &--hidden {
+      display: unset;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-@mixin menuMobile {
+@mixin mobile {
   @media screen and (min-width: $breakpoint__sm) {
     @content;
   }

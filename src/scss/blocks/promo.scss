@@ -1,0 +1,98 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 0px 15px;
+  width: 100%;
+  min-height: 400px;
+  object-fit: contain;
+  background: url('../img/banner-mobile.png') no-repeat;
+
+  &__title {
+    display: block;
+    padding: 5px 20px;
+    margin: 0;
+    width: fit-content;
+    font-size: 26px;
+    color: $colorWhite;
+    text-transform: uppercase;
+    background-color: $colorBlack;
+  }
+
+  &__description {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__info {
+    padding: 5px 20px;
+    width: fit-content;
+    background-color: $colorWhite;
+  }
+
+  &__data,
+  &__place {
+    margin: 0;
+    color: $colorRed;
+  }
+
+  &__data {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__place {
+    font-size: 12px;
+  }
+}
+
+@include mobile {
+  .promo {
+    background: url('../img/banner-desktop.png') no-repeat;
+
+    &__title {
+      font-size: 30px;
+    }
+  }
+}
+
+@include tablet {
+  .promo {
+    background-image: url('../img/banner-table.png') no-repeat;
+
+    &__title {
+      font-size: 38px;
+    }
+
+    &__description {
+      display: block;
+      padding: 5px 20px;
+      margin: 5px 0px;
+      width: fit-content;
+      font-size: $fontSz-s;
+      color: $colorWhite;
+      background-color: $colorBlack;
+    }
+  }
+}
+
+@include desktop {
+  .promo {
+    &__title {
+      font-size: 38px;
+    }
+
+    &__description {
+      font-size: 20px;
+    }
+
+    &__data {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &__place {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 87px;
+  padding: 13px 24px;
+}
+
+@include tablet {
+  .header {
+    padding: 15px 5px;
+  }
+}
+
+@include desktop {
+  .header {
+    padding: 30px 100px;
+  }
+}
