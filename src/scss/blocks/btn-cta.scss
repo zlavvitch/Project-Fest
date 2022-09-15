@@ -1,0 +1,26 @@
+.btn-cta {
+  @include reset-btn;
+  display: block;
+  padding: 10px 30px;
+  margin-left: 8px;
+  margin-top: 25px;
+  color: $colorWhite;
+  background-color: $colorRed;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  outline: none;
+  text-decoration: none;
+}
+
+@include tablet {
+  .btn-cta {
+    margin-top: 46px;
+  }
+}
+
+@include desktop {
+  .btn-cta {
+    margin-top: 40px;
+  }
+}
