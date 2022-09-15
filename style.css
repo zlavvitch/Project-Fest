@@ -496,13 +496,32 @@ template {
   .btn-menu--hidden {
     display: none; } }
 
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url(./fonts/RobotoSlab-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url(./fonts/RobotoSlab-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'RobotoSlab';
+  src: url(./fonts/RobotoSlab-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box; }
 
 .page {
-  background-color: white; }
+  background-color: white;
+  font-family: 'RobotoSlab', sans-serif; }
 
 .content {
   display: flex;
