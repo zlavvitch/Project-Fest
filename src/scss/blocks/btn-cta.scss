@@ -1,16 +1,11 @@
 .btn-cta {
-  @include reset-btn;
-  display: block;
+  @include reset-link;
+  display: inline-block;
   padding: 10px 30px;
-  margin-left: 8px;
-  margin-top: 25px;
-  color: $colorWhite;
-  background-color: $colorRed;
-
   font-size: 12px;
   text-transform: uppercase;
-  outline: none;
-  text-decoration: none;
+  color: $colorWhite;
+  background-color: $colorRed;
 }
 
 @include tablet {

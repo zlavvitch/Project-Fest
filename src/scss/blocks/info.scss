@@ -1,0 +1,71 @@
+.info {
+  width: fit-content;
+  background-color: $colorWhite;
+  padding: 5px 20px;
+
+  &__data {
+    font-size: 16px;
+    font-weight: 700;
+    color: $colorRed;
+  }
+
+  &__place {
+    font-size: 12px;
+  }
+}
+
+// @include mobile {
+//   .promo {
+//     background-position: 0 64%;
+
+//     &__title {
+//       font-size: 30px;
+//     }
+//   }
+// }
+
+// @include tablet {
+//   .promo {
+//     &__wrapper {
+//       padding: 34px 0px 134px 58px;
+//     }
+
+//     &__title {
+//       font-size: 38px;
+//     }
+
+//     &__description {
+//       padding: 5px 20px;
+//       margin: 5px 0px;
+//       width: fit-content;
+//       font-size: $fontSz-s;
+//       color: $colorWhite;
+//       background-color: $colorBlack;
+//     }
+//   }
+// }
+
+// @include desktop {
+//   .promo {
+//     &__wrapper {
+//       padding: 59px 0px 275px 366px;
+//     }
+
+//     &__title {
+//       font-size: 38px;
+//     }
+
+//     &__description {
+//       font-size: 20px;
+//     }
+
+//     &__data {
+//       font-size: 20px;
+//       font-weight: 700;
+//     }
+
+//     &__place {
+//       font-size: 14px;
+//     }
+//   }
+// }

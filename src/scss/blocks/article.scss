@@ -1,0 +1,28 @@
+.article {
+  margin-bottom: 30px;
+
+  &last-child {
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
+
+  &__btn-more {
+    margin-top: 7px;
+    margin-bottom: 44px;
+  }
+}
+
+@include tablet {
+}
+
+@include desktop {
+}

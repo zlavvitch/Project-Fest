@@ -1,12 +1,20 @@
 @import '~normalize.css/normalize.css';
 @import './reset-btn.scss';
+@import './reset-link.scss';
 @import './variables';
 @import './media_breakpoints.scss';
 @import './blocks/header.scss';
 @import './blocks/nav.scss';
+@import './blocks/title.scss';
+@import './blocks/subtitle.scss';
+@import './blocks/info.scss';
 @import './blocks/promo.scss';
+@import './blocks/about-fest.scss';
+@import './blocks/article.scss';
+@import './blocks/participants.scss';
 @import './blocks/btn-logo.scss';
 @import './blocks/btn-club.scss';
+@import './blocks/btn-more.scss';
 @import './blocks/btn-cta.scss';
 @import './blocks/btn-menu.scss';
 
@@ -35,6 +43,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+p {
+  margin: 0;
 }
 
 .page {

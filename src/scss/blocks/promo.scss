@@ -1,7 +1,6 @@
 .promo {
   display: flex;
   flex-direction: column;
-  min-height: 400px;
   background: url('../img/banner.jpeg') no-repeat center;
   background-size: cover;
 
@@ -9,11 +8,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 30px 15px;
+    padding: 30px 15px 223px 15px;
   }
 
   &__title {
-    display: block;
     padding: 5px 20px;
     margin: 0;
     width: fit-content;
@@ -37,18 +35,21 @@
 
   &__data,
   &__place {
-    margin: 0;
     color: $colorRed;
   }
 
-  &__data {
-    font-size: 16px;
-    font-weight: 700;
+  &__btn-cta {
+    margin-left: 8px;
   }
 
-  &__place {
-    font-size: 12px;
-  }
+  // &__data {
+  //   font-size: 16px;
+  //   font-weight: 700;
+  // }
+
+  // &__place {
+  //   font-size: 12px;
+  // }
 }
 
 @include mobile {
@@ -64,7 +65,7 @@
 @include tablet {
   .promo {
     &__wrapper {
-      padding: 34px 58px;
+      padding: 34px 0px 134px 58px;
     }
 
     &__title {
@@ -72,7 +73,6 @@
     }
 
     &__description {
-      display: block;
       padding: 5px 20px;
       margin: 5px 0px;
       width: fit-content;
@@ -85,6 +85,10 @@
 
 @include desktop {
   .promo {
+    &__wrapper {
+      padding: 59px 0px 275px 366px;
+    }
+
     &__title {
       font-size: 38px;
     }
