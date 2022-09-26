@@ -9,7 +9,16 @@
 }
 
 @include tablet {
+  .title {
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 500;
+  }
 }
 
 @include desktop {
+  .title {
+    font-size: 32px;
+    line-height: 38.4px;
+  }
 }

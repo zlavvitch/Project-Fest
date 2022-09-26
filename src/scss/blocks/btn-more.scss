@@ -2,8 +2,6 @@
   @include reset-link;
   display: flex;
   align-items: center;
-  //   flex-direction: row;
-  // width: ;
   color: $colorRed;
   font-size: 12px;
   font-weight: 400;
@@ -13,7 +11,7 @@
   &::after {
     content: '';
     background-image: url(../img/arrow-icon.svg);
-    display: block;
+    display: inline-block;
     width: 20.5px;
     height: 13.56px;
     margin-left: 5px;

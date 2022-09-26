@@ -1,21 +1,39 @@
 .participants {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
+
   font-size: 12px;
   font-weight: 400;
   line-height: 16.8px;
+  color: rgba(88, 89, 92, 1);
+
+  &__subtitle {
+    margin-bottom: 22px;
+  }
 
   &__items {
     column-count: 2;
     list-style-position: inside;
     padding: 0;
     margin: 0;
+    margin-bottom: 22px;
   }
 }
 
 @include tablet {
+  .participants {
+    &__items {
+      column-count: unset;
+    }
+  }
 }
 
 @include desktop {
+  .participants {
+    &__item {
+      &--hidden {
+        display: none;
+      }
+    }
+  }
 }

@@ -8,14 +8,14 @@
   background-color: $colorRed;
 }
 
-@include tablet {
-  .btn-cta {
-    margin-top: 46px;
-  }
-}
+// @include tablet {
+//   .btn-cta {
+//     margin-top: 46px;
+//   }
+// }
 
-@include desktop {
-  .btn-cta {
-    margin-top: 40px;
-  }
-}
+// @include desktop {
+//   .btn-cta {
+//     margin-top: 40px;
+//   }
+// }

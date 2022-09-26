@@ -3,11 +3,20 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
+  color: rgba(39, 39, 39, 1);
   margin: 0;
 }
 
 @include tablet {
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @include desktop {
+  .subtitle {
+    font-size: 26px;
+    line-height: 31.2px;
+  }
 }
