@@ -391,12 +391,34 @@ template {
   margin: 0;
   margin-bottom: 18px; }
 
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 500; } }
+
+@media screen and (min-width: 1366px) {
+  .title {
+    font-size: 32px;
+    line-height: 38.4px; } }
+
 .subtitle {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   line-height: 19.2px;
+  color: #272727;
   margin: 0; }
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 20px;
+    line-height: 24px; } }
+
+@media screen and (min-width: 1366px) {
+  .subtitle {
+    font-size: 26px;
+    line-height: 31.2px; } }
 
 .info {
   width: -webkit-fit-content;
@@ -410,39 +432,6 @@ template {
     color: #ea4646; }
   .info__place {
     font-size: 12px; }
-
-.promo {
-  display: flex;
-  flex-direction: column;
-  background: url(./static/banner.jpeg) no-repeat center;
-  background-size: cover; }
-  .promo__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 30px 15px 223px 15px; }
-  .promo__title {
-    padding: 5px 20px;
-    margin: 0;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 26px;
-    color: white;
-    text-transform: uppercase;
-    background-color: #1a1a1a; }
-  .promo__description--hidden {
-    display: none; }
-  .promo__info {
-    padding: 5px 20px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    background-color: white; }
-  .promo__data, .promo__place {
-    color: #ea4646; }
-  .promo__btn-cta {
-    margin-left: 8px; }
 
 @media screen and (min-width: 361px) {
   .promo {
@@ -478,41 +467,173 @@ template {
   .promo__place {
     font-size: 14px; } }
 
+.promo {
+  display: flex;
+  flex-direction: column;
+  background: url(./static/banner.jpeg) no-repeat center;
+  background-size: cover; }
+  .promo__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 15px 223px 15px; }
+  .promo__title {
+    padding: 5px 20px;
+    margin: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 26px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #1a1a1a; }
+  .promo__description--hidden {
+    display: none; }
+  .promo__info {
+    padding: 5px 20px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: white; }
+  .promo__data, .promo__place {
+    color: #ea4646; }
+  .promo__btn-cta {
+    margin-top: 21.5px;
+    margin-left: 8px; }
+
+@media screen and (min-width: 361px) {
+  .promo {
+    background-position: 0 64%; }
+    .promo__title {
+      font-size: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .promo__wrapper {
+    padding: 34px 0px 134px 58px; }
+  .promo__title {
+    font-size: 38px; }
+  .promo__description {
+    display: flex;
+    padding: 5px 20px;
+    margin: 5px 0px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 16px;
+    color: white;
+    background-color: #1a1a1a; } }
+
+@media screen and (min-width: 1366px) {
+  .promo__wrapper {
+    padding: 59px 0px 275px 366px; }
+  .promo__title {
+    font-size: 38px; }
+  .promo__description {
+    font-size: 20px; }
+  .promo__data {
+    font-size: 20px;
+    font-weight: 700; }
+  .promo__place {
+    font-size: 14px; } }
+
+.gallary {
+  display: flex;
+  flex-direction: column; }
+  .gallary__text {
+    display: inline-block;
+    padding-left: 56px;
+    padding-right: 58px;
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 16.8px;
+    text-align: center; }
+
 .about-fest {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px 27px 42px 23px;
   margin-bottom: 44px; }
+  .about-fest__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
   .about-fest__title {
     margin-bottom: 28px; }
   .about-fest__info {
     text-align: center;
     font-size: 12px;
-    margin-bottom: 43px; }
+    margin-bottom: 43px;
+    color: #58595c; }
   .about-fest__data {
     margin-bottom: 5px; }
   .about-fest__place {
     margin-bottom: 14.5px; }
   .about-fest__location {
-    margin-bottom: 19px; }
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px; }
+    .about-fest__location::before {
+      content: '';
+      background-image: url(./static/geo-icon.svg);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 13px; }
   .about-fest__time {
     margin-bottom: 15.5px; }
   .about-fest__title-time {
+    display: flex;
+    align-items: center;
     font-weight: 700; }
+    .about-fest__title-time::before {
+      content: '';
+      background-image: url(./static/time-icon.svg);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 13px; }
+  .about-fest__timing {
+    text-align: start;
+    margin-left: 33px; }
   .about-fest__articles {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin-bottom: 44px; }
+  .about-fest__participants {
+    min-width: 100%; }
 
 @media screen and (min-width: 768px) {
-  padding: 100px 27px 42px 23px; }
+  .about-fest {
+    padding: 50px 53px 57px 20px; }
+    .about-fest__wrapper {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 25px; }
+    .about-fest__info {
+      min-width: 223px;
+      padding: 0; }
+    .about-fest__data, .about-fest__place {
+      text-align: left; }
+    .about-fest__btn-cta {
+      margin-top: 20px;
+      margin-left: -70px; }
+    .about-fest__articles {
+      min-width: 289px;
+      padding-left: 20px;
+      border-left: 1px black solid; }
+    .about-fest__participants {
+      min-width: 150px; } }
 
 @media screen and (min-width: 1366px) {
-  padding-top: 100px;
-  padding-left: auto;
-  padding-right: auto;
-  padding-bottom: 108px; }
+  .about-fest {
+    padding: 0;
+    padding-top: 100px;
+    padding-bottom: 108px; }
+    .about-fest__wrapper {
+      max-width: 1054px;
+      gap: 124px; } }
 
 .article {
   margin-bottom: 30px; }
@@ -523,24 +644,40 @@ template {
   .article__text {
     font-size: 12px;
     font-weight: 400;
-    line-height: 16.8px; }
+    line-height: 16.8px;
+    color: #58595c; }
   .article__btn-more {
-    margin-top: 7px;
-    margin-bottom: 44px; }
+    margin-top: 7px; }
+
+@media screen and (min-width: 768px) {
+  .article__subtitle {
+    text-align: left; } }
 
 .participants {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16.8px; }
+  line-height: 16.8px;
+  color: #58595c; }
+  .participants__subtitle {
+    margin-bottom: 22px; }
   .participants__items {
     -moz-column-count: 2;
          column-count: 2;
     list-style-position: inside;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    margin-bottom: 22px; }
+
+@media screen and (min-width: 768px) {
+  .participants__items {
+    -moz-column-count: unset;
+         column-count: unset; } }
+
+@media screen and (min-width: 1366px) {
+  .participants__item--hidden {
+    display: none; } }
 
 .btn-logo {
   border: none;
@@ -569,7 +706,7 @@ template {
   .btn-more::after {
     content: '';
     background-image: url(./static/arrow-icon.svg);
-    display: block;
+    display: inline-block;
     width: 20.5px;
     height: 13.56px;
     margin-left: 5px; }
@@ -583,14 +720,6 @@ template {
   text-transform: uppercase;
   color: white;
   background-color: #ea4646; }
-
-@media screen and (min-width: 768px) {
-  .btn-cta {
-    margin-top: 46px; } }
-
-@media screen and (min-width: 1366px) {
-  .btn-cta {
-    margin-top: 40px; } }
 
 .btn-menu {
   border: none;
