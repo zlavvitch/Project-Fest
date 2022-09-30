@@ -1,0 +1,87 @@
+.partners {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    padding-left: 44px;
+    padding-right: 48px;
+  }
+
+  &__item {
+    max-width: none;
+    display: flex;
+    justify-content: center;
+    flex-basis: calc(100% / 3);
+  }
+
+  &__logo {
+    max-width: 100%;
+  }
+
+  .logo-kkc {
+    width: 66px;
+  }
+  .logo-museum {
+    width: 97px;
+  }
+  .logo-orkd {
+    width: 109px;
+  }
+  .logo-skg {
+    width: 60px;
+  }
+  .logo-bm {
+    width: 138px;
+  }
+  .logo-perf {
+    width: 107px;
+  }
+}
+
+@include tablet {
+  .partners {
+    &__items {
+      padding-left: 79.5px;
+      padding-right: 62.25px;
+    }
+
+    &__item {
+      flex-basis: calc(100% / 4);
+    }
+
+    &__logo {
+      .logo-orkd {
+        width: 153px;
+      }
+      .logo-skg {
+        width: 73px;
+      }
+      .logo-bm {
+        width: 169px;
+      }
+      .logo-perf {
+        width: 147px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .partners {
+    &__items {
+      flex-wrap: nowrap;
+      padding-left: 79.5px;
+      padding-right: 62.25px;
+    }
+  }
+}

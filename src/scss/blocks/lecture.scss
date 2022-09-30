@@ -1,0 +1,75 @@
+.lecture {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-left: 28px;
+
+  &:last-of-type {
+    margin-bottom: 32px;
+  }
+
+  &__data {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 700;
+    color: rgba(234, 70, 70, 1);
+    margin-bottom: 3px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 700;
+    color: rgba(39, 39, 39, 1);
+    margin-bottom: 3px;
+  }
+
+  &__auther {
+    font-size: 12px;
+    line-height: 16.8px;
+    font-weight: 700;
+    color: rgba(39, 39, 39, 0.6);
+
+    &-name {
+      color: rgba(39, 39, 39, 1);
+    }
+  }
+
+  &__btn-more {
+    margin-left: 28px;
+    margin-bottom: 17px;
+  }
+}
+
+@include tablet {
+  .lecture {
+    margin-bottom: 0;
+    margin-right: 39px;
+    margin-top: 10px;
+    margin-left: 28px;
+
+    &:first-of-type {
+      margin-top: 30px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 140px;
+    }
+
+    &__btn-more {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@include desktop {
+  .lecture {
+    &:last-of-type {
+      margin-bottom: auto;
+    }
+
+    &__btn-more {
+      margin-bottom: 30.5px;
+    }
+  }
+}

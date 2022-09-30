@@ -1,20 +1,31 @@
 .gallary {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 47px;
 
   &__text {
     display: inline-block;
     padding-left: 56px;
     padding-right: 58px;
+    margin-bottom: 20px;
     font-size: 12px;
     font-weight: 400px;
     line-height: 16.8px;
     text-align: center;
   }
-}
 
-@include tablet {
+  &__slider {
+    margin-bottom: 50px;
+  }
 }
 
 @include desktop {
+  .gallary {
+    margin-bottom: 102px;
+
+    &__slider {
+      width: 50%;
+    }
+  }
 }
